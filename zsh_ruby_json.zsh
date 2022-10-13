@@ -52,7 +52,7 @@ function extract_keys()
           ruby -e "require 'json'; \
           object=JSON.parse('$sub_json'); \
           puts object.keys"))
-         #Call funtion to extract values from the keys
+         #Call function to extract values from the keys
          extract_values sub_json keys
       else
          #Use Ruby to extract the keys from Root
