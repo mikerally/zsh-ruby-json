@@ -43,7 +43,7 @@ function extract_keys()
       #Condition check on whether a path parameter was passed
       if [[ "${1}" ]]; then
          #Extract the JSON at the requested path
-	       sub_json=$(
+	 sub_json=$(
           ruby -e "require 'json'; \
           object=JSON.parse('$json'); \
           puts object${1}.to_json")
