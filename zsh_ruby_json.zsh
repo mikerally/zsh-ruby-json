@@ -87,7 +87,7 @@ for department in $departments; do
   extract_key_count "['$department']"
   employee_count=0
   #Loop through all the employees in a Department
-  while [[ $employee_count < $key_count ]]; do
+  while [[ $employee_count -lt $key_count ]]; do
    #Get and print out an employee entry
    extract_keys "['$department'][$employee_count]"
    echo "Employee number $(($employee_count + 1)) in $department is:" \
